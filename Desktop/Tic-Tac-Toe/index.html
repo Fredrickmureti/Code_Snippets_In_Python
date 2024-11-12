@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="overlay" id="overlay">
+    <div class="popup">
+      <h2 id="popupMessage"></h2>
+      <button id="popupBtn">Play Again</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <!-- Player Profiles -->
+    <div class="player-profiles">
+      <div class="player-profile" id="player1Profile">
+        <img id="player1Image" src="https://www.w3schools.com/howto/img_avatar.png" alt="Player 1 Avatar" />
+        <div>
+          <span id="player1Name">Player 1</span>
+          <span id="player1Score">Score: 0</span>
+        </div>
+      </div>
+      <div class="player-profile" id="player2Profile">
+        <img id="player2Image" src="https://www.w3schools.com/howto/img_avatar.png" alt="Player 2 Avatar" />
+        <div>
+          <span id="player2Name">Player 2</span>
+          <span id="player2Score">Score: 0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gameboard -->
+    <div class="game-board" id="gameBoard">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div><!-- Edit Name Modal -->
+    <div class="edit-name-modal" id="editNameModal">
+      <div class="modal-content">
+        <h2>Edit Player Names</h2>
+        <label for="player1NameInput">Player 1:</label>
+        <input type="text" id="player1NameInput" value="Player 1" />
+        <label for="player2NameInput">Player 2:</label>
+        <input type="text" id="player2NameInput" value="Player 2" />
+        <button id="saveNamesBtn">Save</button>
+        <button id="closeModalBtn">Cancel</button>
+      </div>
+    </div>
+
+
+
+    <!-- Edit Name Modal -->
+    <div class="edit-name-modal" id="editNameModal">
+      <div class="modal-content">
+        <h2>Edit Player Names</h2>
+        <label for="player1NameInput">Player 1:</label>
+        <input type="text" id="player1NameInput" value="Player 1" />
+        <label for="player2NameInput">Player 2:</label>
+        <input type="text" id="player2NameInput" value="Player 2" />
+        <button id="saveNamesBtn">Save</button>
+        <button id="closeModalBtn">Cancel</button>
+      </div>
+    </div>
+
+
+    <div class="game-status">
+      <span id="statusText">Player 1's Turn</span>
+      <button id="resetButton">Reset Game</button>
+      <div id="scoreBoard">
+        <span id="player1ScoreText">Player 1: 0</span>
+        <span id="player2ScoreText">Player 2: 0</span>
+      </div>
+    </div>
+
+    <div class="settings">
+      <button id="toggleMusicBtn">Toggle Music</button>
+      <button id="editNamesBtn">Edit Names</button>
+    </div>
+
+    <div class="footer">
+      <p>Created by <a href="https://dev-fredrick.vercel.app" target="_blank">devFredrick</a></p>
+      <div class="social-icons">
+        <a href="https://github.com/Fredrickmureti" target="_blank">
+          <img src="/images/github-logo.png" alt="GitHub" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bgMusic" autoplay></audio>
+
+  </audio>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
